@@ -53,10 +53,20 @@ footer {
     padding: 30px;
     color: #666;
 }
-/* Images */
-figurecaption , img{
+figure {
+    text-align: center;
+    margin: 30px auto;
+}
+
+figure img {
     display: block;
-    max-width: 50%;
+    width: 50%;
     height: auto;
-    margin: 25px auto;
+    margin: 0 auto;
+}
+
+figcaption {
+    text-align: center;
+    margin-top: 10px;
+    color: #666;
 }
