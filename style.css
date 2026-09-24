@@ -54,7 +54,7 @@ footer {
     color: #666;
 }
 /* Images */
-figure, figurecaption {
+figure, figurecaption , img{
     display: block;
     max-width: 50%;
     height: auto;
