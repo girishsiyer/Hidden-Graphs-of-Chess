@@ -64,11 +64,35 @@
         <h3>PG — Pawn Graph</h3>
 
         <p>
-            The Pawn Graph represents the structure and
-            relationships created by pawns on the chessboard.
+            A graph is a network of connected nodes. In chess, the nodes are the chess pieces, including pawns.
         </p>
-
-
+         <p>
+            If we think of the 64 squares of a chessboard as a network of squares, then by excluding the empty squares, we get a network of pieces.
+        </p>
+        <p>
+            In this network, some pieces naturally connect through different relationships.
+        </p>
+        <p>
+           In the case of pawns, a pawn chain is one of the important structures. A Pawn Graph (PG) represents the positive relationships between pawns.
+        </p>
+          <p>
+           In the following diagram, h3–g4 and d4–c3 form parts of the PG.
+        </p>
+          <p>
+            We will leave the discussion of isolated pawns, doubled pawns and other pawn structures for later.
+        </p>
+         <p>
+            This abstraction provides a way to look at the health of the pawn structure from a different perspective.
+        </p>
+         <p>
+            Another important aspect is flexibility. The PG can be evaluated using a scoring system that takes these structural characteristics into account.
+        </p>
+          <p>
+            The details of the scoring system and how it is used in position analysis are developed in the book.
+        </p>
+          <p>
+            
+        </p>
         <h3>MG — Movement Graph</h3>
 
         <p>
