@@ -53,4 +53,10 @@ footer {
     padding: 30px;
     color: #666;
 }
-
+/* Images */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 25px auto;
+}
