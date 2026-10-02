@@ -118,133 +118,24 @@
          <img src = "Images/Mobility-Graph--Knight.png" alt = "Mobility of Knihght doing nothing from outpost."/>
              <figurecaption>Figure 3 - Black Knight on c5 occupy an Outpost but does nothing.</figurecaption>
          </figure>
-    </section>
-    <hr>         
-       
-          <p>
-            We will leave the discussion of isolated pawns, doubled pawns and other pawn structures for later.
-        </p>
-         <p>
-            This abstraction provides a way to look at the health of the pawn structure from a different perspective.
-        </p>
-         <p>
-            Another important aspect is flexibility. The PG can be evaluated using a scoring system that takes these structural characteristics into account.
-        </p>
-          <p>
-            The details of the scoring system and how it is used in position analysis are developed in the book.
-        </p>
-          <p>
-            
-        </p>
-        <h3>MG — Movement Graph</h3>
-
-        <p>
-           When a piece moves from its original position to its current position, the path created by its movement forms a Mobility Graph (MG).
-        </p>
+        <p>In the position above, the Black Knight is sitting on the c5 outpost. It occupies a good square, but it is not performing any important role in the current position.</p>
+        <p>The Knight may have useful possibilities in the future, but at this moment it is not creating pressure, defending, or gaining space. A good square, therefore, does not automatically mean an active piece.</p>
+        <p>In terms of flexibility, we look at the roles a piece is actually performing, rather than simply judging the quality of the square it occupies.</p>
+        <p>The traditional description and the graph description are simply looking at different aspects of the position.</p>
+        <p>Traditional chess can regard the outpost as a <strong>positional plus</strong>. The graph description asks what the piece is actually doing from that square.</p>
+        <p>If the piece has no current role, occupying the outpost can instead be understood as<strong> piece improvement</strong>—a useful placement that may create possibilities for future activity.</p>
         
-        <p>
-           Like a pawn chain, it can be viewed as a chain created through the path of the piece.
-        </p>
-        <p>
-           The MG is concerned with the current position of the piece. We are not evaluating the piece based on where it was, but on what it can do from where it is now.
-        </p>
-        <p>
-           Every piece except pawns has a Mobility Graph.
-        </p>
-        <p>
-           There are different ways to evaluate the mobility of a piece. One important question is:
-        </p>
-        <p>
-           <strong>How many roles does the piece play from its current position?</strong>
-        </p>
-        <p>
-           The more roles a piece can play, the more flexible it becomes. This flexibility can then be represented through a score.
-        </p>
-        <p>
-           The following diagram shows the MG of a piece.
-        </p>
-        <figure>
-         <img src = "Images/Mobility-Graph--Knight.png" alt = "Mobility Graph"/>
-             <figurecaption>Figure 2 - Mobility Graph of the Knight. Every Piece has a Mobility Graph except Pawns.</figurecaption>
-         </figure>
-         <p>
-           Future positions are explored through an analysis and calculation system using Graph methods.
-        </p>
-         <p>
-           Graph Chess does not replace traditional chess. 
-           You can switch between the traditional and graph-based ways of looking at a position whenever you need to. 
-           The two systems are complementary rather than competitive.
-        </p>
-  <h3>CG — Coordination Graph</h3>
-         <p>
-           The Coordination Graph (CG) is created by multiple pieces from the same side. 
-        The pieces are connected through their supporting relationships, forming a chain of different pieces.
-        </p>
-         <p>
-           A piece in the CG has a supporting role, but it also has its own Mobility Graph (MG). This distinction is important.
-        </p>
-         <p>
-           In the following position, the knight on f3 supports the bishop on g5. At the same time, the knight itself is supported by the queen, creating a chain of supporting pieces.
-        </p>
-        <figure>
-         <img src = "Images/CG-Github.png" alt = "Coordination Graph"/>
-             <figurecaption>Figure 3 - An Example Coordination Graph between Queen, Knight, and the Bishop</figurecaption>
-         </figure>
-        <p>
-            The CG is the dedicated support system for the pieces. Its strength is related to the flexibility of the pieces in supporting one another.
-        </p>
-         <p>
-            An overloaded piece has limited flexibility in this supporting network.
-        </p>
-         <p>
-            The CG can also be affected by tactical disruptions and sacrifices. When a connection is broken, the coordination may have to be rebuilt or reorganized.
-        </p>
-         <p>
-            The detailed scoring and analysis of the CG are developed in the book.
-        </p>
-         
     </section>
-
-
     <section>
-
-        <h2>The Book - Coming Soon</h2>
-
-        <p>
-           The three graphs provide a new way to look at a chess position. But understanding the graphs is only the beginning.
-        </p>
-           <p>
-           Hidden Graphs of Chess takes this idea further and develops it into a practical method for learning and playing chess.
-        </p>
-           <p>
-           The book explains how the three graphs can be used to understand a position, identify important strengths and weaknesses, generate candidate moves, and guide calculation.
-               It also connects Graph Chess with traditional chess concepts, showing how both approaches can work together.
-        </p>
-           <p>
-           The book includes worked positions, graph analysis, examples, tactical ideas, and training positions so that the method can be studied and practiced step by step.
-        </p>
-           <p>
-           The aim is not to replace the chess knowledge you already have, but to give you another way to see the position—and another way to decide what deserves your attention.
-        </p>
-    <p>
-  <a href="#">  <strong>Hidden Graphs of Chess</strong></br>
-        A Graph-based Method to Learn and Playing Chess</br> </a>
-        </p>
+        <h3>Two different questions</h3>
+        <p>This gives us two related but different questions:</p>
+        <strong>Mobility:</strong>
+        <p>How many movement possibilities does the piece have?</p>
+        <strong>Flexibility:</strong>
+        <p>How many useful roles can the piece perform?</p>
+        <p>The distinction is small in wording but significant in describing a chess position. A piece does not become active merely because it can move to many squares, and occupying a good square does not necessarily mean that the piece is currently performing an active role.</p>
+    <p>The Mobility Graph uses the roles available to a piece to describe this aspect of its position.</p>
     </section>
-
-
-    <section>
-
-        <h2>Training Positions</h2>
-
-        <p>
-            Practical chess positions will demonstrate the
-            Graph Chess decision-making process.
-        </p>
-
-    </section>
-
-
     <section>
 
         <h2>About</h2>
