@@ -70,3 +70,9 @@ figcaption {
     margin-top: 10px;
     color: #666;
 }
+blockquote {
+    border-left: 4px solid #777;
+    padding-left: 15px;
+    margin-left: 0;
+    color: #555;
+}
