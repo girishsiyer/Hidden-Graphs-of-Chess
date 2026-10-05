@@ -28,12 +28,13 @@
     <section>
 
         <h2>How does graph chess handle Initiative?</h2>
-
+<h3>Graph Chess and Initiative<h3>
         <p>
-           Traditional chess already provides many tools and concepts that help players improve their games. 
-            Graph Chess is another improvement to the traditional chess system. More precisely, 
-            it adds another layer of abstraction to the way we look at a chess position.Traditional chess is broadly classified into three areas:
+           This article requires some knowledge of the basics of Graph Chess.
+           If you are unfamiliar with Graph Chess, I have written an article about Graph Chess and its basic structures.
+           Graph Chess uses three graphs: the Pawn Graph (PG), the Mobility Graph (MG), and the Coordination Graph (CG). The working and features of these graphs are explained in the Graph Chess articles.
         </p>
+<hr>
         <ul>
             <li>Tactics</li>
             <li>Positional Chess</li>
