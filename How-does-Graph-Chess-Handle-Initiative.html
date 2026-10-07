@@ -54,6 +54,26 @@
         <p>In Graph Chess, there is no separate concept of initiative.</p>
         <p>This is because the graphs represent <strong>positive structures</strong>. When we move a piece, we consider the move as a graph transformation.
             It is not merely an ordinary transformation. We look for a carefully chosen transformation that leads to a better position.</p>
+        <p>This does not mean that positional weaknesses are ignored. Weaknesses are considered separately.</p>
+        <p>Consider a position represented by the three graphs. The position contains positive graph structures, but it may also contain positional weaknesses. We do not discuss those weaknesses here.</p>
+        <p>The positive graph structure provides a priority list of moves. Prophylactic moves are considered first, followed by attacking moves.</p>
+        <p>However, the availability of an attacking move is not sufficient. We must calculate the consequences of the move and evaluate the resulting position.</p>
+        <p>This is where Graph Chess becomes interesting.</p>
+        <p>After calculation, Graph Chess considers questions such as:</p>
+        <ol>
+            <li>Did the piece's MG and flexibility improve?</li>
+            <li>Did the move achieve an objective?</li>
+            <li>Was the move a tactical operation?</li>
+        </ol>
+        <p>The first question considers whether the moving piece has improved its role and flexibility. The second considers the purpose or objective of the move. The third recognizes that the move may simply be a tactic or sacrifice.</p>
+        <p>Therefore, Graph Chess does not need a separate initiative concept to cover these situations. The effects of the move are evaluated through the graph structures and through calculation.</p>
+        <h3>Maintaining the Graph Structure</h3>
+        <p>The main objective is to maintain a healthy graph structure after the move, unless the position demands a tactical operation.</p>
+        <p>The <strong>Pawn Graph</strong> should remain free from significant weaknesses.</p>
+        <p>The <strong>Mobility Graph</strong> should maintain or improve the flexibility of the pieces.</p>
+        <p>The <strong>Coordination Graph</strong> should remain properly structured. If a tactical operation temporarily disrupts the coordination structure, the structure should be rebuilt after the tactical sequence.</p>
+
+</p>
     </section>     
     <hr>
               <section>
