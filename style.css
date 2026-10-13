@@ -140,3 +140,45 @@ blockquote {
         margin-top: 30px;
     }
 }
+/* Balance the main content and sidebar */
+.main-content {
+    width: 76%;
+    padding-right: 24px;
+    box-sizing: border-box;
+}
+
+.sidebar {
+    width: 24%;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+/* Related Articles heading */
+.sidebar h3 {
+    margin-top: 0;
+    margin-bottom: 18px;
+}
+
+/* Related Articles links */
+.sidebar a {
+    display: block;
+    padding: 12px;
+    margin-bottom: 6px;
+    line-height: 1.5;
+    box-sizing: border-box;
+}
+
+/* Responsive layout for mobile */
+@media (max-width: 768px) {
+    .main-content,
+    .sidebar {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .sidebar {
+        margin-top: 28px;
+        border-left: none;
+    }
+}
