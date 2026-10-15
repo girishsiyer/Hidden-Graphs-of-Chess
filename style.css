@@ -41,4 +41,35 @@
         gap: 24px;
     }
 }
+/*Fix Sidebar Articles */
+```css
+/* Sidebar article buttons */
+.right-sidebar a {
+    display: block;
+    padding: 12px 14px;
+    margin: 10px 0;
+    background: #f5f6f7;
+    color: #263746;
+    text-decoration: none;
+    border: 1px solid #e0e4e8;
+    border-radius: 5px;
+    font-size: 15px;
+    line-height: 1.5;
+    transition: background-color 0.2s ease,
+                border-color 0.2s ease,
+                color 0.2s ease;
+}
+
+/* Hover effect */
+.right-sidebar a:hover {
+    background: #e8edf2;
+    border-color: #aebbc8;
+    color: #111827;
+}
+
+/* Keyboard accessibility */
+.right-sidebar a:focus-visible {
+    outline: 2px solid #365f85;
+    outline-offset: 2px;
+}
 ```
