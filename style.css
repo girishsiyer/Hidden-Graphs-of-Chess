@@ -228,3 +228,34 @@ a:hover {
         max-height: 360px;
     }
 }
+```css
+/* Responsive, consistently sized chess diagrams */
+.chess-figure {
+    margin: 1.5rem 0;
+    text-align: center;
+}
+
+.chess-diagram {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    height: 350px;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+.chess-figure figcaption {
+    max-width: 600px;
+    margin: 0.75rem auto 0;
+    color: #6c757d;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+/* Smaller screens */
+@media (max-width: 576px) {
+    .chess-diagram {
+        height: 260px;
+    }
+}
+```
