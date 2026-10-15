@@ -4,331 +4,376 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <meta name="google-site-verification"
           content="1QoTM8z4W7GGm3Di8y7WxlDdclxlquQ5_J9VwLQYEa4">
 
     <meta name="description"
-          content="Discover Hidden Graphs of Chess, a graph-based method for understanding chess positions through pawn structure, piece flexibility, and coordination.">
+          content="Discover Hidden Graphs of Chess, a graph-based method to understand chess positions through pawn structure, mobility, flexibility, and coordination.">
 
-    <title>Hidden Graphs of Chess | A Graph-Based Method to Learn and Play Chess</title>
+    <title>Hidden Graphs of Chess | Learn and Play Chess</title>
 
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-    <div class="header-container">
-        <h1>Hidden Graphs of Chess</h1>
-        <p>A Graph-Based Method to Learn and Play Chess</p>
+<!-- Header -->
+<header class="site-header">
+    <div class="container py-4 py-md-5">
+        <h1 class="site-title">Hidden Graphs of Chess</h1>
+        <p class="site-subtitle mb-0">
+            A Graph-Based Method to Learn and Play Chess
+        </p>
     </div>
 </header>
 
-<div class="page-container">
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark site-nav">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Graph Chess</a>
 
-    <main class="main-content">
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNavigation"
+                aria-controls="mainNavigation"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-        <section>
-            <h2>What is Graph Chess?</h2>
-
-            <p>
-                Traditional chess uses tactics, positional concepts, and strategic
-                planning to help players understand positions and choose moves.
-                Graph Chess adds another layer of abstraction to this process.
-            </p>
-
-            <p>Traditional chess is broadly classified into three areas:</p>
-
-            <ul>
-                <li>Tactics</li>
-                <li>Positional Chess</li>
-                <li>Game Strategy</li>
+        <div class="collapse navbar-collapse" id="mainNavigation">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#three-graphs">The Three Graphs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#the-book">The Book</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
             </ul>
+        </div>
+    </div>
+</nav>
 
-            <p>
-                There are also many principles that guide players through
-                different phases of a chess game.
-            </p>
+<!-- Main Layout -->
+<div class="container page-content py-4 py-lg-5">
+    <div class="row g-4">
 
-            <p>
-                Graph Chess looks at the same position from a different
-                perspective. It represents relationships between pieces
-                and pawns through three distinct graphs:
-            </p>
+        <!-- Main Content -->
+        <main class="col-12 col-lg-9">
 
-            <ul>
-                <li>Pawn Graph (PG)</li>
-                <li>Mobility Graph (MG)</li>
-                <li>Coordination Graph (CG)</li>
-            </ul>
+            <!-- Introduction -->
+            <section class="content-card mb-4">
+                <h2>What Is Graph Chess?</h2>
 
-            <p>
-                Traditional chess often examines positional features such as
-                king safety, mobility, activity, and pawn structure as
-                individual factors.
-            </p>
+                <p>
+                    Traditional chess uses tactics, positional concepts, and
+                    strategic planning to help players understand positions
+                    and choose moves.
+                </p>
 
-            <p>
-                Graph Chess goes a step further by examining relationships
-                between these features. This provides another way to
-                understand a position and guide decision-making.
-            </p>
-        </section>
+                <p>
+                    Graph Chess adds another layer of abstraction to this
+                    process. It examines relationships between pieces and
+                    pawns to provide another perspective on a chess position.
+                </p>
 
-        <section>
-            <h2>The Three Graphs</h2>
+                <p>Traditional chess is broadly classified into three areas:</p>
 
-            <h3>PG — Pawn Graph</h3>
+                <ul>
+                    <li>Tactics</li>
+                    <li>Positional Chess</li>
+                    <li>Game Strategy</li>
+                </ul>
 
-            <p>
-                A graph is a network of connected nodes. In chess, we can
-                represent pieces and pawns as nodes and their relationships
-                as connections.
-            </p>
+                <p>
+                    Graph Chess represents relationships within a position
+                    through three distinct graphs:
+                </p>
 
-            <p>
-                Pawns naturally form structural relationships. One important
-                example is a pawn chain.
-            </p>
+                <ul>
+                    <li><strong>Pawn Graph (PG)</strong></li>
+                    <li><strong>Mobility Graph (MG)</strong></li>
+                    <li><strong>Coordination Graph (CG)</strong></li>
+                </ul>
 
-            <p>
-                The Pawn Graph (PG) represents positive structural
-                relationships between pawns.
-            </p>
+                <p>
+                    Traditional chess often examines positional features
+                    such as king safety, mobility, activity, and pawn
+                    structure as individual factors. Graph Chess examines
+                    relationships between these features to help players
+                    understand a position and guide decision-making.
+                </p>
+            </section>
 
-            <p>
-                In the following diagram, h3–g4 and d4–c3 form parts of the PG.
-            </p>
+            <!-- Three Graphs -->
+            <section class="content-card mb-4" id="three-graphs">
+                <h2>The Three Graphs</h2>
 
-            <figure>
-                <img
-                    src="Images/Pawn-Graph-Github-website.png"
-                    alt="Chess position illustrating pawn chains in the Pawn Graph">
-                <figcaption>
-                    Figure 1 — The Pawn Graph (PG) represents positive
-                    relationships between pawns, including pawn chains.
-                </figcaption>
-            </figure>
+                <h3>PG — Pawn Graph</h3>
 
-            <p>
-                Isolated pawns, doubled pawns, and other structural weaknesses
-                also affect the health of the pawn structure.
-            </p>
+                <p>
+                    A graph is a network of connected nodes. In chess,
+                    pieces and pawns can be represented as nodes, with
+                    connections representing relationships between them.
+                </p>
 
-            <p>
-                Another important aspect is flexibility. The PG can be
-                evaluated using a scoring system that takes structural
-                characteristics into account.
-            </p>
+                <p>
+                    Pawns naturally form structural relationships.
+                    One important example is a pawn chain. The Pawn Graph
+                    (PG) represents positive structural relationships
+                    between pawns.
+                </p>
 
-            <p>
-                The details of the scoring system and its use in position
-                analysis are developed in the book.
-            </p>
+                <p>
+                    In the following diagram, h3–g4 and d4–c3 form
+                    parts of the PG.
+                </p>
 
-            <h3>MG — Mobility Graph</h3>
+                <figure class="chess-figure">
+                    <img
+                        src="Images/Pawn-Graph-Github-website.png"
+                        class="img-fluid chess-diagram"
+                        alt="Chess position illustrating pawn chains in the Pawn Graph">
+                    <figcaption>
+                        Figure 1 — The Pawn Graph represents positive
+                        relationships between pawns, including pawn chains.
+                    </figcaption>
+                </figure>
 
-            <p>
-                The Mobility Graph (MG) examines a non-pawn piece in its
-                current position. Rather than evaluating a piece by the path
-                it followed to reach its square, we examine what it can do
-                from where it stands now.
-            </p>
+                <p>
+                    Isolated pawns, doubled pawns, and other structural
+                    weaknesses also affect the health of the pawn structure.
+                    Flexibility is another important aspect of the PG.
+                </p>
 
-            <p>
-                A piece can perform different roles, such as attacking,
-                defending, supporting other pieces, or contributing to a plan.
-            </p>
+                <p>
+                    The details of graph scoring and its use in position
+                    analysis are developed in the book.
+                </p>
 
-            <p>
-                Every piece except pawns has a Mobility Graph.
-            </p>
+                <hr class="section-divider">
 
-            <p>
-                One important question is:
-            </p>
+                <h3>MG — Mobility Graph</h3>
 
-            <p>
-                <strong>
-                    How many useful roles can the piece perform from its
-                    current position?
-                </strong>
-            </p>
+                <p>
+                    The Mobility Graph (MG) examines a non-pawn piece in
+                    its current position. We consider the roles it can
+                    perform from where it stands now.
+                </p>
 
-            <p>
-                The more useful roles a piece can perform, the greater its
-                flexibility. This flexibility can be represented through
-                a scoring system.
-            </p>
+                <p>
+                    A piece can attack, defend, support other pieces,
+                    restrict the opponent, or contribute to a plan.
+                </p>
 
-            <p>
-                The following diagram illustrates the MG of a knight.
-            </p>
+                <p>
+                    Every piece except pawns has a Mobility Graph.
+                    One important question is:
+                </p>
 
-            <figure>
-                <img
-                    src="Images/Mobility-Graph--Knight.png"
-                    alt="Diagram illustrating the Mobility Graph of a knight">
-                <figcaption>
-                    Figure 2 — The Mobility Graph (MG) examines the roles
-                    available to a piece in its current position.
-                </figcaption>
-            </figure>
+                <blockquote class="chess-quote">
+                    <strong>
+                        How many useful roles can a piece perform
+                        from its current position?
+                    </strong>
+                </blockquote>
 
-            <p>
-                Future positions are explored through analysis and
-                calculation using graph-based methods.
-            </p>
+                <p>
+                    The more useful roles a piece can perform, the greater
+                    its flexibility. This flexibility can be represented
+                    through a scoring system.
+                </p>
 
-            <p>
-                Graph Chess does not replace traditional chess. You can
-                switch between traditional and graph-based ways of looking
-                at a position whenever needed. The two approaches are
-                complementary rather than competitive.
-            </p>
+                <figure class="chess-figure">
+                    <img
+                        src="Images/Mobility-Graph--Knight.png"
+                        class="img-fluid chess-diagram"
+                        alt="Diagram illustrating the Mobility Graph of a knight">
+                    <figcaption>
+                        Figure 2 — The Mobility Graph examines the roles
+                        available to a piece in its current position.
+                    </figcaption>
+                </figure>
 
-            <h3>CG — Coordination Graph</h3>
+                <p>
+                    Future positions are explored through analysis and
+                    calculation using graph-based methods.
+                </p>
 
-            <p>
-                The Coordination Graph (CG) represents supporting
-                relationships between pieces of the same side. These
-                relationships can form a chain of supporting pieces.
-            </p>
+                <p>
+                    Graph Chess does not replace traditional chess.
+                    The two approaches are complementary, and players
+                    can switch between them whenever needed.
+                </p>
 
-            <p>
-                A piece in the CG may support another piece while also
-                having its own Mobility Graph (MG). This distinction
-                is important.
-            </p>
+                <hr class="section-divider">
 
-            <p>
-                In the following position, the knight on f3 supports the
-                bishop on g5. The knight is also supported by the queen,
-                creating a chain of supporting pieces.
-            </p>
+                <h3>CG — Coordination Graph</h3>
 
-            <figure>
-                <img
-                    src="Images/CG-Github.png"
-                    alt="Chess position illustrating coordination between a queen, knight, and bishop">
-                <figcaption>
-                    Figure 3 — An example Coordination Graph (CG) connecting
-                    a queen, knight, and bishop through supporting relationships.
-                </figcaption>
-            </figure>
+                <p>
+                    The Coordination Graph (CG) represents supporting
+                    relationships between pieces of the same side.
+                    These relationships can form a chain of supporting pieces.
+                </p>
 
-            <p>
-                The usefulness of the CG depends not only on the existence
-                of supporting connections, but also on how effectively
-                the pieces can maintain and use them.
-            </p>
+                <p>
+                    A piece in the CG may support another piece while also
+                    having its own Mobility Graph (MG). This distinction
+                    is important.
+                </p>
 
-            <p>
-                An overloaded piece may have limited flexibility in this
-                supporting network because it has too many responsibilities.
-            </p>
+                <p>
+                    In the following position, the knight on f3 supports
+                    the bishop on g5. The knight is also supported by
+                    the queen, creating a chain of supporting pieces.
+                </p>
 
-            <p>
-                The CG can also be affected by tactical disruptions and
-                sacrifices. When a connection is broken, coordination
-                may need to be rebuilt or reorganized.
-            </p>
+                <figure class="chess-figure">
+                    <img
+                        src="Images/CG-Github.png"
+                        class="img-fluid chess-diagram"
+                        alt="Chess position illustrating coordination between a queen, knight, and bishop">
+                    <figcaption>
+                        Figure 3 — An example Coordination Graph connecting
+                        a queen, knight, and bishop through supporting relationships.
+                    </figcaption>
+                </figure>
 
-            <p>
-                The detailed scoring and analysis of the CG are developed
-                in the book.
-            </p>
-        </section>
+                <p>
+                    The usefulness of the CG depends on how effectively
+                    pieces maintain and use their supporting relationships.
+                    An overloaded piece may have limited flexibility
+                    because it has too many responsibilities.
+                </p>
 
-        <section>
-            <h2>The Book — Coming Soon</h2>
+                <p>
+                    Tactical disruptions and sacrifices can break
+                    connections, requiring coordination to be rebuilt
+                    or reorganized.
+                </p>
 
-            <p>
-                The three graphs provide a new way to look at a chess
-                position. But understanding the graphs is only the beginning.
-            </p>
+                <p>
+                    The detailed scoring and analysis of the CG are
+                    developed in the book.
+                </p>
+            </section>
 
-            <p>
-                <em>Hidden Graphs of Chess</em> develops this idea into
-                a practical method for learning and playing chess.
-            </p>
+            <!-- Book -->
+            <section class="content-card mb-4" id="the-book">
+                <h2>The Book</h2>
 
-            <p>
-                The book explains how the three graphs can help players
-                understand positions, identify important strengths and
-                weaknesses, generate candidate moves, and guide calculation.
-                It also connects Graph Chess with traditional chess concepts,
-                showing how both approaches can work together.
-            </p>
+                <span class="badge text-bg-secondary mb-3">
+                    Coming Soon
+                </span>
 
-            <p>
-                The book includes worked positions, graph analysis,
-                examples, tactical ideas, and training positions so that
-                the method can be studied and practised step by step.
-            </p>
+                <h3>Hidden Graphs of Chess</h3>
 
-            <p>
-                The aim is not to replace the chess knowledge you already
-                have, but to give you another way to see a position and
-                decide what deserves your attention.
-            </p>
+                <p class="text-secondary">
+                    A Graph-Based Method to Learn and Play Chess
+                </p>
 
-            <p class="book-title">
-                <strong>Hidden Graphs of Chess</strong>
-                <span>A Graph-Based Method to Learn and Play Chess</span>
-            </p>
-        </section>
+                <p>
+                    The three graphs provide a new way to look at a chess
+                    position. But understanding the graphs is only the
+                    beginning.
+                </p>
 
-        <section>
-            <h2>Training Positions</h2>
+                <p>
+                    <em>Hidden Graphs of Chess</em> develops this idea
+                    into a practical method for learning and playing chess.
+                </p>
 
-            <p>
-                Practical chess positions will demonstrate the Graph Chess
-                decision-making process.
-            </p>
-        </section>
+                <p>
+                    The book explains how the graphs can help players
+                    understand positions, identify strengths and weaknesses,
+                    generate candidate moves, and guide calculation.
+                    It also connects Graph Chess with traditional chess
+                    concepts, showing how the two approaches work together.
+                </p>
 
-        <section>
-            <h2>About</h2>
+                <p>
+                    Worked positions, graph analysis, tactical ideas,
+                    and training positions help readers study and practise
+                    the method step by step.
+                </p>
+            </section>
 
-            <p>
-                Hidden Graphs of Chess explores a graph-based approach
-                to understanding chess positions and improving
-                decision-making through graph-based thinking.
-            </p>
-        </section>
+            <!-- Training -->
+            <section class="content-card mb-4" id="training">
+                <h2>Training Positions</h2>
 
-    </main>
+                <p class="mb-0">
+                    Practical chess positions will demonstrate the
+                    Graph Chess decision-making process.
+                </p>
+            </section>
 
-    <aside class="right-sidebar">
-        <h3>Related Articles</h3>
+            <!-- About -->
+            <section class="content-card" id="about">
+                <h2>About Hidden Graphs of Chess</h2>
 
-        <ul>
-            <li>
-                <a href="https://girishsiyer.github.io/Hidden-Graphs-of-Chess/">
-                    What Is Graph Chess?
-                </a>
-            </li>
-            <li>
-                <a href="https://girishsiyer.github.io/Hidden-Graphs-of-Chess/mobility-vs-flexibility-in-chess.html">
-                    Mobility vs Flexibility in Chess
-                </a>
-            </li>
-            <li>
-                <a href="https://girishsiyer.github.io/Hidden-Graphs-of-Chess/How-does-Graph-Chess-Handle-Initiative.html">
-                    How Does Graph Chess Handle Initiative?
-                </a>
-            </li>
-        </ul>
-    </aside>
+                <p class="mb-0">
+                    Hidden Graphs of Chess explores a graph-based approach
+                    to understanding chess positions and improving
+                    decision-making. Its goal is to complement traditional
+                    chess knowledge with another way of seeing the board.
+                </p>
+            </section>
 
+        </main>
+
+        <!-- Sidebar -->
+        <aside class="col-12 col-lg-3">
+            <div class="sidebar-card">
+
+                <h2 class="sidebar-title">Related Articles</h2>
+
+                <nav aria-label="Related articles">
+                    <a class="article-link"
+                       href="https://girishsiyer.github.io/Hidden-Graphs-of-Chess/">
+                        What Is Graph Chess?
+                    </a>
+
+                    <a class="article-link"
+                       href="https://girishsiyer.github.io/Hidden-Graphs-of-Chess/mobility-vs-flexibility-in-chess.html">
+                        Mobility vs Flexibility in Chess
+                    </a>
+
+                    <a class="article-link"
+                       href="https://girishsiyer.github.io/Hidden-Graphs-of-Chess/How-does-Graph-Chess-Handle-Initiative.html">
+                        How Does Graph Chess Handle Initiative?
+                    </a>
+                </nav>
+
+            </div>
+        </aside>
+
+    </div>
 </div>
 
-<footer>
-    <p>Hidden Graphs of Chess</p>
+<!-- Footer -->
+<footer class="site-footer">
+    <div class="container py-4 text-center">
+        <p class="mb-1">Hidden Graphs of Chess</p>
+        <small>A Graph-Based Method to Learn and Play Chess</small>
+    </div>
 </footer>
+
+<!-- Bootstrap 5 JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
