@@ -132,6 +132,23 @@
                     <p>We need to calculate the possible outcomes of our candidates to select the best move.
                         But selecting the right candidates in the first place can be difficult in traditional chess.</p>
                     <p>For higher-rated players, this might be less of a problem because they have learned thousands of chess patterns through experience.</p>
+                    <p>The problem is more serious for improving players who are still trying to understand positions and decide what to do.</p>
+                    <p>Here is the basic idea behind Graph Negatives:</p>
+                    <strong>A Graph Negative is a pawn or piece that no longer contributes properly to its respective graph.</strong>
+                    <p>A doubled or isolated pawn can be a negative in the PG because it loses some of the flexibility and structural benefits of a connected pawn chain.</p>
+                    <p>A trapped or passive piece can be a negative in the MG because it has lost useful activity or flexibility.</p>
+                    <p>A hanging piece is a negative in the CG because it has fallen outside the effective support network of the pieces.</p>               
+                    <p> In Graph Chess, these are our targets.</p>
+                    <p> First, they are relatively easy to spot once you become familiar with the graph structures.</p>
+                    <p> Second, they can help us decide what to attack instead of getting lost in the maze of positional features.</p>
+                    <p> Of course, we still need to calculate whether an attack works. Identifying a negative is only the starting point.</p>
+                    <h2> Examples of Graph Negative</h2>
+                    <p> I am going to give three examples of Graph Negatives, one for each type of graph in a chess position.</p>
+                    <h3> Negatives of a pawn graph</h3>
+                    <p> When we look at a pawn structure, we find that pawns can lose flexibility in several ways.
+                        Pawns that cannot advance effectively, such as backward pawns, or pawns that have become structural weaknesses, such as doubled or isolated pawns, can be negatives in the PG.</p>
+                    <p> If you spot them in your game and have an opportunity to attack them, you should consider doing so.</p>
+                    <p> Here is an example of a negative in the Pawn Graph.</p>
                     
 <hr>
                    
