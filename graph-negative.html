@@ -1,1 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="google-site-verification"
+          content="1QoTM8z4W7GGm3Di8y7WxlDdclxlquQ5_J9VwLQYEa4">
+
+    <title>How Does Graph Chess Handle Initiative? | Hidden Graphs of Chess</title>
+
+    <meta name="description"
+          content="Discover how Graph Chess approaches initiative through graph structures, flexibility, candidate moves, and calculation.">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <!-- Custom stylesheet: always load after Bootstrap -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="site-header py-4">
+        <div class="container">
+            <h1 class="site-title mb-2">Hidden Graphs of Chess</h1>
+            <p class="site-subtitle mb-0">
+                A Graph-Based Method to Learn and Play Chess
+            </p>
+        </div>
+    </header>
+
+    <!-- Main page layout -->
+    <div class="container my-4 my-lg-5">
+        <div class="row g-4 g-lg-5 align-items-start">
+
+            <!-- Main article -->
+            <main class="col-12 col-lg-8">
+
+                <article>
+
+                    <h2>How Does Graph Chess Handle Initiative?</h2>
+
+                   
+                   <blockquote class="blockquote border-start border-3 ps-3 my-4">
+                            This article is part of Graph Chess, an approach to describing
+                            and analyzing chess positions using relationships between
+                            pieces, pawns, and their possible roles. The ideas introduced
+                            here are individual concepts; their full connection and
+                            application are developed separately in the Graph Chess method.
+                        </blockquote>
+ <h3>Graph Chess and Initiative</h3>
+
+                    <p>
+                        This article discusses a traditional chess concept —
+                        <strong>initiative</strong> — and how Graph Chess handles it.
+                    </p>
+
+                    <h3>What Is Initiative?</h3>
+
+                    <p>
+                        In a broader sense, initiative is a threat or demand that forces
+                        the opponent to respond. It is not classified simply as a threat
+                        because a threat usually has a specific target, while an initiative
+                        does not necessarily have a target.
+                    </p>
+
+                    <p>
+                        An initiative is a move that demands an immediate response
+                        from the opponent.
+                    </p>
+
+                    <p>
+                        For example, consider the following position. It is White's turn
+                        to move. White plays <strong>Ng5</strong>, creating the possibility
+                        of checkmate or a fork on the next move. White has the initiative.
+                    </p>
+
+                    <figure class="article-figure">
+                        <img
+                            src="Images/Figure1-Initiative-in-Graph-Chess-Linkdin.png"
+                            class="img-fluid"
+                            alt="Chess position illustrating initiative in Graph Chess">
+
+                        <figcaption>
+                            Figure 1 — White can play Bf7+ or fork with Ng7.
+                        </figcaption>
+                    </figure>
+
+                    <p>
+                        The player who can make a threatening or demanding move has
+                        the initiative. Initiative is generally considered a temporary
+                        advantage.
+                    </p>
+
+                    <p>
+                        The position itself allows the player to take the initiative.
+                    </p>
+
+                    <h3>Initiative in Graph Chess</h3>
+
+                    <p>
+                        In Graph Chess, there is no separate concept of initiative.
+                    </p>
+
+                    <p>
+                        This is because the graphs represent <strong>positive structures</strong>.
+                        When we move a piece, we consider the move as a graph transformation.
+                        It is not merely an ordinary transformation. We look for a carefully
+                        chosen transformation that leads to a better position.
+                    </p>
+
+                    <p>
+                        This does not mean that positional weaknesses are ignored.
+                        Weaknesses are considered separately.
+                    </p>
+
+                    <p>
+                        Consider a position represented by the three graphs. The position
+                        contains positive graph structures, but it may also contain
+                        positional weaknesses. We do not discuss those weaknesses here.
+                    </p>
+
+                    <p>
+                        The positive graph structure provides a priority list of moves.
+                        Prophylactic moves are considered first, followed by attacking moves.
+                    </p>
+
+                    <p>
+                        However, the availability of an attacking move is not sufficient.
+                        We must calculate the consequences of the move and evaluate the
+                        resulting position.
+                    </p>
+
+                    <p>This is where Graph Chess becomes interesting.</p>
+
+                    <p>After calculation, Graph Chess considers questions such as:</p>
+
+                    <ol>
+                        <li>Did the piece's MG and flexibility improve?</li>
+                        <li>Did the move achieve an objective?</li>
+                        <li>Was the move a tactical operation?</li>
+                    </ol>
+
+                    <p>
+                        The first question considers whether the moving piece has improved
+                        its role and flexibility. The second considers the purpose or
+                        objective of the move. The third recognizes that the move may
+                        simply be a tactic or sacrifice.
+                    </p>
+
+                    <p>
+                        Therefore, Graph Chess does not need a separate initiative concept
+                        to cover these situations. The effects of the move are evaluated
+                        through the graph structures and through calculation.
+                    </p>
+
+                    <h3>Maintaining the Graph Structure</h3>
+
+                    <p>
+                        The main objective is to maintain a healthy graph structure after
+                        the move, unless the position demands a tactical operation.
+                    </p>
+
+                    <p>
+                        The <strong>Pawn Graph</strong> should remain free from
+                        significant weaknesses.
+                    </p>
+
+                    <p>
+                        The <strong>Mobility Graph</strong> should maintain or improve
+                        the flexibility of the pieces.
+                    </p>
+
+                    <p>
+                        The <strong>Coordination Graph</strong> should remain properly
+                        structured. If a tactical operation temporarily disrupts the
+                        coordination structure, the structure should be rebuilt after
+                        the tactical sequence.
+                    </p>
+
+                    <p>
+                        Therefore, what traditional chess describes as initiative can
+                        be viewed in Graph Chess as a consequence of the position's
+                        graph structure and the moves generated from it.
+                    </p>
+
+                    <p>
+                        Graph Chess does not need to identify initiative as a separate
+                        advantage. It identifies the available moves, their objectives,
+                        their tactical consequences, and their effect on the graph structure.
+                    </p>
+
+                </article>
+
+                <hr class="my-5">
+
+                <!-- Book section -->
+                <section id="the-book">
+
+                    <h2>The Book — Coming Soon</h2>
+
+                    <p>
+                        The three graphs provide a new way to look at a chess position.
+                        But understanding the graphs is only the beginning.
+                    </p>
+
+                    <p>
+                        <em>Hidden Graphs of Chess</em> takes this idea further and
+                        develops it into a practical method for learning and playing chess.
+                    </p>
+
+                    <p>
+                        The book explains how the three graphs can be used to understand
+                        a position, identify important strengths and weaknesses, generate
+                        candidate moves, and guide calculation. It also connects Graph
+                        Chess with traditional chess concepts, showing how both approaches
+                        can work together.
+                    </p>
+
+                    <p>
+                        The book includes worked positions, graph analysis, examples,
+                        tactical ideas, and training positions so that the method can
+                        be studied and practiced step by step.
+                    </p>
+
+                    <p>
+                        The aim is not to replace the chess knowledge you already have,
+                        but to give you another way to see the position — and another
+                        way to decide what deserves your attention.
+                    </p>
+
+                    <p class="book-title">
+                        <strong>Hidden Graphs of Chess</strong><br>
+                        A Graph-Based Method to Learn and Play Chess
+                    </p>
+
+                </section>
+
+                <hr class="my-5">
+
+                <!-- Training positions -->
+                <section id="training-positions">
+
+                    <h2>Training Positions</h2>
+
+                    <p>
+                        Practical chess positions will demonstrate the Graph Chess
+                        decision-making process.
+                    </p>
+
+                </section>
+
+                <hr class="my-5">
+
+                <!-- About -->
+                <section id="about">
+
+                    <h2>About</h2>
+
+                    <p>
+                        Hidden Graphs of Chess is a graph-based method for understanding
+                        and playing chess using graph-based thinking.
+                    </p>
+
+                </section>
+
+            </main>
+
+            <!-- Right sidebar -->
+            <aside class="col-12 col-lg-4">
+
+                <div class="sidebar-box p-3 p-lg-4">
+
+                    <h3 class="h4 mb-3">Related Articles</h3>
+
+                    <div class="list-group">
+
+                        <a
+                            href="https://girishsiyer.github.io/Hidden-Graphs-of-Chess/"
+                            class="list-group-item list-group-item-action">
+                            What Is Graph Chess?
+                        </a>
+
+                        <a
+                            href="https://girishsiyer.github.io/Hidden-Graphs-of-Chess/mobility-vs-flexibility-in-chess.html"
+                            class="list-group-item list-group-item-action">
+                            Mobility vs Flexibility in Chess
+                        </a>
+
+                        <a
+                            href="https://girishsiyer.github.io/Hidden-Graphs-of-Chess/How-does-Graph-Chess-Handle-Initiative.html"
+                            class="list-group-item list-group-item-action">
+                            How Does Graph Chess Handle Initiative?
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </aside>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer py-4 mt-4">
+        <div class="container">
+            <p class="mb-0">Hidden Graphs of Chess</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+```
