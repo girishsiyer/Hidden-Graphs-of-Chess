@@ -179,7 +179,27 @@ a:hover {
     background-color: #e9edf1;
     color: #1d3c56;
 }
+/* Responsive and centered images on articles */
+```css
+/* Centered, responsive article images */
+.article-image {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    max-height: 400px;
+    height: auto;
+    object-fit: contain;
+    margin: 0 auto;
+}
 
+/* Keep captions aligned with the image */
+.article-figure .figure-caption {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+```
 
 /* Footer */
 
